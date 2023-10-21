@@ -1,0 +1,54 @@
+  .main-para {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#active {
+  background-color: white;
+  color: steelblue;
+}
+
+  nav {
+    background-color: steelblue;
+    padding: 10px;
+    text-align: center;
+  }
+
+  a {
+    color: white;
+    margin: 40px;
+    font-size: 1.2em;
+  }
+
+  a:hover {
+    background-color: white;
+    color: steelblue;
+}
+
+  h1 {
+    color: steelblue;
+    text-align: center;
+  }
+  img {
+    width: 70%;
+    border: 4px solid steelblue;
+    display: block;
+    margin: 0 auto;
+  }
+  p {
+    padding: 10px;
+  }
+  footer {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  footer p {
+    font-size: 1em;
+    margin: 20px auto;
+}

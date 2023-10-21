@@ -1,0 +1,144 @@
+/* style.css */
+
+/* Define um limite máximo de largura para o conteúdo da página e centraliza-o na tela */
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Estiliza o corpo */
+body {
+    background-color: #fcfbfb; 
+}
+
+/* Estiliza o cabeçalho */
+header {
+    background-color: #C6E4FD;
+    padding: 10px 0;
+}
+
+/* Largura do logotipo */
+.logo-link .logo {
+    width: 80px;
+    height: auto; /* Mantém a proporção da altura ao ajustar a largura */
+}
+
+/* Largura do ícone */
+.icon {
+    width: 80px;
+    height: 80px; /* Define a altura para manter um ícone quadrado */
+}
+
+/* Estiliza os links de navegação e centraliza-os */
+nav a {
+    color: #231F20;
+    text-decoration: none;
+    margin: 0 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Estiliza o link "Home" com fundo preto e letra branca */
+nav a[href="index.html"] {
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+}
+
+/* Ao passar o mouse em cima do link, ele muda de cor */
+nav a:hover {
+    background-color: #231F20;
+    color: #17B890;
+    border-radius: 3px;
+}
+
+/* Estiliza o botão "Join Us".*/
+.join {
+    background-color: #1D66AF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Estiliza o botão "Book Now".*/
+.book {
+    background-color: #1D66AF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.book:hover, .join:hover {
+    background-color: #000;
+    color: #fcfbfb;
+}
+
+/* Estiliza a seção de mensagem principal e centraliza o texto e o botão */
+#background {
+    height: 725px;
+    background-color: #17B890;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+#hero-msg h1, #hero-msg h4, .msg .join {
+    text-align: center;
+}
+
+.msg {
+    background-color: #C6E4FD;
+    color: #231F20;
+    text-align: center;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.msg h2 {
+    font-size: 28px;
+}
+
+.msg p {
+    font-size: 16px;
+}
+
+/* Estiliza as imagens nos cartões (centraliza as imagens) */
+.card-img, .icon {
+    text-align: center;
+}
+
+/* Estiliza o rodapé */
+footer {
+    background-color: #C6E4FD;
+    padding: 10px 0;
+    color: #231F20;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer a {
+    color: #231F20;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
