@@ -38,7 +38,7 @@ header {
 
 /* Largura do logotipo */
 .logo-link .logo {
-    width: 80px;
+    width: 120px;
     height: auto; /* Mantém a proporção da altura ao ajustar a largura */
 }
 
@@ -65,7 +65,7 @@ nav a {
 
 /* Estiliza o link "Home" com fundo preto e letra branca */
 nav a[href="index.html"] {
-    background-color: black;
+    background-color: #231F20;
     border-radius: 3px;
     color: white;
 }
@@ -123,6 +123,9 @@ nav a:hover {
 main section {
     text-align: center;
 }
+main section img {
+    box-sizing: border-box;
+}
 
 #hero-msg h1, #hero-msg h4, .msg .join {
     text-align: center;
@@ -151,6 +154,10 @@ main section {
 /* Estiliza as imagens nos cartões (centraliza as imagens) */
 .card-img, .icon {
     text-align: center;
+}
+
+.card-img {
+    border: 10px solid #231F20;
 }
 
 .rivers-card, .camping-card, .rapids-card {
