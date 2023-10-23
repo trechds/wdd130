@@ -1,0 +1,48 @@
+/* Importando as fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Playpen+Sans&family=Roboto&display=swap');
+
+body {
+    background-color: white; /* Alterando para fundo branco */
+    color: #231f20;
+    font-family: 'Roboto', sans-serif; /* Aplicando a fonte Roboto com fallback para sans-serif */
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #1d66af;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Playpen Sans', 'Courgette', sans-serif;
+}
+
+h2 {
+    color: #17b890;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Playpen Sans', 'Courgette', sans-serif;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+img {
+    border-radius: 50%; /* Removendo a borda e mantendo a borda arredondada */
+    margin-bottom: 0px;
+}
+
+/* Adicionando bordas e preenchimento (padding) aos parágrafos */
+p {
+    border: 2px solid #1d66af;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 15px;
+}
