@@ -27,6 +27,7 @@ h2 {
 .home-title {
     font-family: 'Playpen Sans', 'Courgette', cursive;
     font-size: 2em;
+    margin-top: 10px;
 }
 
 /* Estiliza o cabeçalho */
@@ -83,12 +84,11 @@ nav a:hover {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     display: inline-block;
     text-align: center;
     font-size: 18px;
     padding: 15px 30px;
+    margin-top: 50px;
 }
 
 /* Estiliza o botão "Book Now".*/
@@ -98,11 +98,11 @@ nav a:hover {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    margin-bottom: 20px;
     display: inline-block;
     text-align: center;
     font-size: 18px;
     padding: 15px 30px;
+    margin-top: 50px;
 }
 
 .book:hover, .join:hover {
@@ -153,11 +153,16 @@ main section {
     text-align: center;
 }
 
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
 /* Estiliza o rodapé */
 footer {
     background-color: #C6E4FD;
     padding: 25px 50px;
     color: #231F20;
+    margin-top: 200px;
 }
 
 footer p {
