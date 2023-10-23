@@ -10,11 +10,11 @@
 /* Estiliza o corpo */
 body {
     background-color: #fcfbfb;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif, Arial;
 }
 
 h1, h2, h4 {
-    font-family: 'Courgette', cursive;
+    font-family: 'Playpen Sans', 'Courgette', cursive;
 }
 
 /* Estiliza o cabeçalho */
