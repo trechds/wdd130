@@ -43,4 +43,5 @@ nav a:hover {
 p {
     font-size: 20px; /* Tamanho aumentado */
     font-weight: bold; /* Em negrito */
+    font-family: 'Playpen Sans', 'Courgette', Arial;
 }
