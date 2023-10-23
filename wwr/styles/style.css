@@ -11,10 +11,22 @@
 body {
     background-color: #fcfbfb;
     font-family: 'Roboto', sans-serif, Arial;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h4 {
     font-family: 'Playpen Sans', 'Courgette', cursive;
+}
+
+h2 {
+    margin: 0;
+}
+
+.home-title {
+    font-family: 'Playpen Sans', 'Courgette', cursive;
+    font-size: 2em;
 }
 
 /* Estiliza o cabeçalho */
@@ -29,10 +41,15 @@ header {
     height: auto; /* Mantém a proporção da altura ao ajustar a largura */
 }
 
+#logo-link {
+    padding-top: 5px;
+}
+
 /* Largura do ícone */
 .icon {
     width: 80px;
     height: 80px; /* Define a altura para manter um ícone quadrado */
+    padding-top: 10px;
 }
 
 /* Estiliza os links de navegação e centraliza-os */
@@ -42,6 +59,7 @@ nav a {
     margin: 0 15px;
     text-align: center;
     display: inline-block;
+    padding: 35px;
 }
 
 /* Estiliza o link "Home" com fundo preto e letra branca */
@@ -69,6 +87,8 @@ nav a:hover {
     margin-bottom: 20px;
     display: inline-block;
     text-align: center;
+    font-size: 18px;
+    padding: 15px 30px;
 }
 
 /* Estiliza o botão "Book Now".*/
@@ -81,6 +101,8 @@ nav a:hover {
     margin-bottom: 20px;
     display: inline-block;
     text-align: center;
+    font-size: 18px;
+    padding: 15px 30px;
 }
 
 .book:hover, .join:hover {
@@ -110,9 +132,11 @@ main section {
     background-color: #C6E4FD;
     color: #231F20;
     text-align: center;
-    padding: 5px;
+    padding: 35px;
     margin-top: 30px;
     margin-bottom: 30px;
+    line-height: 1.5em;
+    
 }
 
 .msg h2 {
@@ -120,7 +144,8 @@ main section {
 }
 
 .msg p {
-    font-size: 16px;
+    font-size: 0.8em;
+    padding-bottom: 15px;
 }
 
 /* Estiliza as imagens nos cartões (centraliza as imagens) */
@@ -131,7 +156,7 @@ main section {
 /* Estiliza o rodapé */
 footer {
     background-color: #C6E4FD;
-    padding: 10px 0;
+    padding: 25px 50px;
     color: #231F20;
 }
 
@@ -147,4 +172,8 @@ footer a {
 
 footer p a:hover {
     text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
