@@ -1,0 +1,46 @@
+/* Importando as fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Playpen+Sans&family=Roboto&display=swap');
+
+body {
+    background-color: white; /* Alterando para fundo branco */
+    color: #231f20;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinhando ao topo */
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #1d66af;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+/* Estilizando os links de navegação como botões */
+nav a {
+    background-color: #1d66af;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #17b890;
+}
+
+p {
+    font-size: 20px; /* Tamanho aumentado */
+    font-weight: bold; /* Em negrito */
+}
