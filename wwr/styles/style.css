@@ -49,7 +49,7 @@ header {
 /* Largura do ícone */
 .icon {
     width: 80px;
-    height: 80px; /* Define a altura para manter um ícone quadrado */
+    height: auto;
     padding-top: 10px;
 }
 
@@ -77,11 +77,10 @@ nav a:hover {
     border-radius: 3px;
 }
 
-/* Estiliza o botão "Join Us".*/
-.join {
+/* Estiliza o botão "Book Now".*/
+.book {
     background-color: #1D66AF;
     color: white;
-    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
@@ -91,19 +90,19 @@ nav a:hover {
     margin-top: 50px;
 }
 
-/* Estiliza o botão "Book Now".*/
-.book {
+/* Estiliza o botão "Join Us".*/
+.join {
     background-color: #1D66AF;
     color: white;
-    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
     text-align: center;
     font-size: 18px;
     padding: 15px 30px;
-    margin-top: 50px;
+    margin-top: 50px;   
 }
+
 
 .book:hover, .join:hover {
     background-color: #000;
@@ -118,6 +117,11 @@ nav a:hover {
 
 .button-box {
     text-align: center;
+}
+
+.mountains {
+    margin-top: 60px;
+    margin-bottom: 120px;
 }
 
 main section {
