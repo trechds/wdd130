@@ -1,4 +1,5 @@
-/* style.css */
+/* Import the Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Playpen+Sans&family=Roboto&display=swap');
 
 /* Define um limite máximo de largura para o conteúdo da página e centraliza-o na tela */
 #content {
@@ -8,7 +9,12 @@
 
 /* Estiliza o corpo */
 body {
-    background-color: #fcfbfb; 
+    background-color: #fcfbfb;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h4 {
+    font-family: 'Courgette', cursive;
 }
 
 /* Estiliza o cabeçalho */
