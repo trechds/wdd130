@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const images = ["rio1.jpg", "rio2.jpg", "rio3.jpg"]; // Adicione os nomes dos arquivos de imagem do seu slideshow
+    const images = ["images/facil.png", "images/medio.png", "images/dificil.png", "images/perigoso.png"]; // Adicione os nomes dos arquivos de imagem do seu slideshow
     let currentImageIndex = 0;
     const riverImage = document.querySelector('.river-image');
     const prevSlide = document.querySelector('.prev-slide');
