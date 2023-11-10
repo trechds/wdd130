@@ -375,12 +375,6 @@
         font-size: 15px;
     }
 
-    .river-details {
-        display: flex;
-        flex-direction: column; /* Altere a direção do flexbox para coluna */
-        align-items: center; /* Alinhe os itens no centro horizontalmente */
-        margin-bottom: 30px;
-    }
 
     .river-slideshow {
         position: relative;
@@ -430,8 +424,8 @@
         border: none;
         border-radius: 5px;
         padding: 15px 30px;
-        margin-top: 20px;
-        margin-bottom: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         font-size: 18px;
         cursor: pointer;
         transition: background-color 0.3s;
@@ -442,32 +436,40 @@
     }
 
     .river-details {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr;
         align-items: center;
-        margin-bottom: 30px;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .river-description-box {
-        text-align: left; /* Alinhe o texto à esquerda dentro da descrição do rio */
+        grid-column: 3; /* Alteração: coluna 3 */
+        grid-row: 1 / span 2; /* Alteração: linha 1 e 2 */
+        max-width: 800px;
+        height: 100%;
+        text-align: center; /* Alinhe o texto à esquerda dentro da descrição do rio */
+        flex: 1; /* Ocupa todo o espaço restante */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #17B890;
+        border-radius: 5px;
+        border-color: #1D66AF;
     }
 
     .icon-box {
+        grid-column: 2;
+        grid-row: 1;
         width: 100px;
         height: 100px;
         background-color: #1D66AF;
-        margin-right: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .icon-wrapper {
-        width: 60px;
-        height: 60px;
-        background-color: #fff; /* Adicione a cor de fundo desejada para o ícone */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin: 0 auto;
     }
 
     .details-text {
@@ -495,19 +497,26 @@
         background-color: #1D66AF;
     }
 
-    .difficulty-level {
-        text-align: left;
-    }
-
     #rivers-footer {
         margin-top: 0;
     }
 
-    /* Adicione estilos específicos para diferentes níveis de dificuldade, por exemplo: */
     #difficulty {
-        color: green; /* ou outra cor para representar um nível fácil */
-        font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
-        margin-bottom: 10px; /* Adicione margem na parte inferior do parágrafo de dificuldade */
+        color: green; 
+        font-size: 18px; 
+        margin-bottom: 10px;
+    }
+
+    .difficulty-level {
+        grid-column: 2; 
+        grid-row: 2; 
+        text-align: center;
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
 
 
