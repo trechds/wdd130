@@ -405,13 +405,16 @@
     }
 
     .prev-slide, .next-slide {
-        font-size: 20px;
+        font-size: 25px;
         cursor: pointer;
         color: #fff;
-        background-color: #17B890;
+        
         padding: 10px 18px;
-        border-radius: 50%;
+        border-radius: 0 3px 3px 0;
         margin: 20px;
+        transition: 0.6s ease;
+        font-weight: bold;
+        user-select: none;
     }
 
     .prev-slide:hover, .next-slide:hover {
@@ -483,6 +486,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 20px;
+        transition: background-color 0.6s ease;
     }
 
     .indicator {
@@ -492,10 +496,16 @@
         background-color: #ccc;
         margin: 0 5px;
         cursor: pointer;
+        transition: background-color 0.6s ease;
+        background-color: #717171;;
+    }
+    
+    .indicator:hover,.active-indicator:hover {
+        background-color:#1D66AF;
     }
 
     .active-indicator {
-        background-color: #1D66AF;
+        background-color:#17B890;
     }
 
     #rivers-footer {
