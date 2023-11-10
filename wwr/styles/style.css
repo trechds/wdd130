@@ -49,6 +49,13 @@
         align-self: center;
     }
 
+    .logo:hover {
+        opacity: .8;
+        transform: scale(1.1);
+        transition: transform .5s;
+    }
+    
+
     .logo-link {
         justify-self: center;
         align-self: center;
@@ -295,6 +302,12 @@
 
     footer .social img {
         padding-top: 15px;
+    }
+
+    #social-media:hover {
+        opacity: .8;
+        transform: scale(1.1);
+        transition: transform .5s;
     }
 
 
