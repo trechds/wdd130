@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function showImage(index) {
         riverImage.src = images[index];
+        currentImageIndex = index;
         updateIndicators(index);
     }
 
