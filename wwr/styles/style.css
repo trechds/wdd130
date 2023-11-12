@@ -575,6 +575,18 @@
         font: bold;
     }
 
+    .whatsapp-icon {
+        position: fixed;
+        bottom: 20px; /* Ajuste a posição conforme necessário */
+        right: 20px; /* Ajuste a posição conforme necessário */
+      }
+      
+      .whatsapp-icon img {
+        width: 50px; /* Ajuste o tamanho do ícone conforme necessário */
+        height: auto;
+        border-radius: 50%; /* Torna o ícone circular, ajuste conforme necessário */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra, ajuste conforme necessário */
+      }
 
     
 
