@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const difficultyLevel = document.querySelector('#difficulty');
     const riverDescription = document.querySelector('#river-description');
     const riverInfo = document.querySelector('#river-info');
+    const chooseBtn = document.querySelector('.choose-btn');
+    const modal = document.getElementById("modal");
+    const closeModalBtn = document.querySelector('.close');
 
     const riverInfoData = [
         {
@@ -42,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     ];
     
-
     let currentImageIndex = 0;
 
     function showImage(index) {
@@ -61,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function setDifficultyStyle(difficulty) {
         difficultyLevel.textContent = difficulty;
-
         difficultyLevel.style.fontWeight = 'bold';
 
         switch (difficulty) {
@@ -87,7 +88,6 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('river-name').textContent = riverInfoData[index].name;
 
         iconBox.innerHTML = '';
-
         const iconImg = document.createElement('img');
         iconImg.src = riverInfoData[index].icon;
         iconImg.style.width = '100%';
@@ -124,4 +124,21 @@ document.addEventListener('DOMContentLoaded', function () {
         currentImageIndex = (currentImageIndex + 1) % images.length;
         showImage(currentImageIndex);
     });
+
+    function openModal() {
+        modal.style.display = "flex";
+    }
+
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    function scheduleAppointment() {
+        // Lógica para agendamento - pode ser ajustada conforme necessário
+        alert("Appointment Scheduled!");
+        closeModal();
+    }
+
+    chooseBtn.addEventListener("click", openModal);
+    closeModalBtn.addEventListener('click', closeModal);
 });

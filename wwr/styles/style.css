@@ -16,6 +16,7 @@
         font-size: 22px;
         margin: 0;
         padding: 0;
+
     }
 
     h1, h2, h4 {
@@ -575,6 +576,134 @@
     }
 
 
+    
+
+
+    
+/* Adicione isso ao seu arquivo de estilos CSS */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; /* Alterado para 100% */
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 530px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+}
+
+#appointment-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="datetime-local"] {
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="datetime-local"] label[for="appointment-date"] {
+    margin-right: 10px;
+}
+
+#calendar-label {
+    margin-right: 10px; /* Adiciona margem à direita para separar da hora */
+}
+
+input[type="datetime-local"] label[for="appointment-time"] {
+    margin-left: 10px;
+}
+
+input[type="datetime-local"] label[for="appointment-date"] {
+    margin-right: 10px;
+}
+
+/* Atualiza o estilo do input de hora */
+input[type="datetime-local"]::after {
+    content: "Time";
+    display: inline-block;
+    margin-left: 10px; /* Adiciona margem à esquerda para separar da hora */
+}
+
+/* Garante que o background cubra todo o conteúdo, incluindo o formulário de agendamento */
+.modal-content:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+
+
+    
 
 
 
@@ -586,7 +715,17 @@
 
 
 
-    @media screen and (max-width: 900px) {
+
+
+
+
+
+
+
+
+/* ************** HOME PAGE ************** */
+
+    @media screen and (max-width: 600px) {
         #hero, .home-grid {
             display: block;
             height: auto;
@@ -603,13 +742,14 @@
         }
         #hero-msg {
             margin-top: 0;
+            margin: 0 auto;
         }
         #hero-msg h4 {
             display: none;
         }
         .home-title {
             font-size: 25px;
-            color: #6f7364;
+            color: #231F20;
         }
         .rivers-card, .camping-card, .rapids-card { 
             margin: 50px auto;
@@ -622,8 +762,81 @@
             width: 80%;
             display: block;
             margin: 0 auto;
+            margin-bottom: 10px;
         }
         footer {
             margin-top: 25px;
+            font-size: 10px;
+        }
+
+        #social-media {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 30px;
+            margin-left: 5px;
+            margin-right: 5px;
         }
     }
+
+
+
+
+
+
+
+/* ************** RIVER PAGE ************** */
+
+@media screen and (max-width: 600px) {
+    #rivers-page {
+        margin: 0;
+        padding: 0;
+    }
+
+    #hero-msg {
+        margin: 0 auto;
+    }
+
+    #home-title-river {
+        margin-top: -190px;
+        color: #231F20;
+    }
+
+    #home-title-description {
+        color: #231F20;
+    }
+
+    .home-grid-rivers {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .home-grid-rivers .difficulty-level,
+    .home-grid-rivers .icon-box,
+    .home-grid-rivers .river-description-box,
+    .home-grid-rivers .river-box-description {
+        order: 1;
+        margin-top: 10px;
+        align-self: center;
+    }
+
+    .river-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .river-slideshow {
+        max-width: 100%;
+    }
+
+    .river-description-box {
+        margin: 10px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    #difficulty {
+        margin: 0 auto;
+    }
+}
+
+    

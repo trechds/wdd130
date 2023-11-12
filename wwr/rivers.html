@@ -26,8 +26,8 @@
                 <img id="hero-img" src="images/rios.png" alt="People enjoying white water rafting">
             </div>
             <section id="hero-msg" style="margin-top: 200px; text-shadow: black;">
-                <h1 class="home-title">Discover Our Spectacular Rivers!</h1>
-                <h4>Welcome to our dedicated page showcasing the magnificent rivers offered by Acqua Benders Boating. Explore the thrilling waters and stunning landscapes of our handpicked rivers, each brimming with unforgettable adventures waiting for you.</h4>
+                <h1 id="home-title-river" class="home-title" >Discover Our Spectacular Rivers!</h1>
+                <h4 id="home-title-description">Welcome to our dedicated page showcasing the magnificent rivers offered by Acqua Benders Boating. Explore the thrilling waters and stunning landscapes of our handpicked rivers, each brimming with unforgettable adventures waiting for you.</h4>
             </section>
         </div>
         <div class="center-container">
@@ -50,6 +50,7 @@
                     </div>
 
                     <button class="choose-btn">Choose This</button>
+  
 
                     <div class="river-details">
                         <div class="icon-box">
@@ -95,5 +96,30 @@
     <script src="scripts/script.js"></script>
 
 </body>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title">Great Choice!</h2>
+        <p id="modal-msg">Type your information to schedule your appointment:</p>
+
+        <form id="appointment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="datetime">Date and Time:</label>
+            <input type="datetime-local" id="datetime" name="datetime" required>
+
+            <button type="button" onclick="scheduleAppointment()">Schedule</button>
+        </form>
+    </div>
+</div>
+
 
 </html>
