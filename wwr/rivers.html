@@ -6,9 +6,7 @@
     <title>Whitewater Rafting Vacations | Acqua Benders Boating | Rivers</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
-
     <div id="content-rivers">
         <header>
             <a id="logo_link" class="logo-link" href="index.html">
@@ -32,14 +30,12 @@
         </div>
         <div class="center-container">
             <main class="home-grid-rivers">
-
                 <section id="rivers-page">
                     <h2>Explore our Rivers</h2>
                     <div class="river-info">
                         <h4 id="river-name">Name of the River</h4>
                         <p id="river-description">Brief Description</p>
                     </div>
-
                     <div class="river-slideshow">
                         <img class="river-image" src="images/facil.png" alt="Fácil">
                         <div class="slideshow-controls">
@@ -48,10 +44,7 @@
                         </div>
                         <div class="indicators"></div>
                     </div>
-
                     <button class="choose-btn">Choose This</button>
-  
-
                     <div class="river-details">
                         <div class="icon-box">
                             <div class="icon">
@@ -68,12 +61,9 @@
                             <p id="river-info">Informações sobre o rio selecionado.</p>
                         </div>
                     </div>
-
                 </section>
-
             </main>
         </div>
-
         <footer id="rivers-footer">
             <p>Acqua Benders &copy; 2023 - Thiago Rech</p>
             <p><a href="site-plan-rafting.html">Site Plan</a></p>
@@ -90,43 +80,30 @@
                 </a>
             </div>
         </footer>
-
-
     </div>
     <script src="scripts/script.js"></script>
-
 </body>
-
 <div id="modal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
         <h2 id="modal-title">Great Choice!</h2>
         <p id="modal-msg">Type your information to schedule your appointment:</p>
-
         <form id="appointment-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-
             <label for="phone">Phone:</label>
             <input type="tel" id="phone" name="phone" required>
-
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-
             <label for="datetime">Date and Time:</label>
             <input type="datetime-local" id="datetime" name="datetime" required>
-
             <button type="button" onclick="scheduleAppointment()">Schedule</button>
         </form>
     </div>
 </div>
-
 <div class="whatsapp-icon">
     <a href="https://api.whatsapp.com/send?phone=5554991424628" target="_blank">
       <img src="images/whatsapp.png" alt="WhatsApp">
     </a>
 </div>
-  
-
-
 </html>
