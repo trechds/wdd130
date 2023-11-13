@@ -798,7 +798,24 @@ form {
     background-color: #1D66AF;
   }
   
-
+  #feedback {
+    background-color: #45a049;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Playpen Sans', 'Courgette', Arial;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5em;
+    display: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .9);
+    border-radius: 5px;
+}
+.moveDown {
+    margin-top: 3em;
+}
 
 
 
