@@ -305,7 +305,7 @@
         padding-top: 15px;
     }
 
-    #social-media:hover {
+    #social-media:hover, .whatsapp-icon:hover {
         opacity: .8;
         transform: scale(1.1);
         transition: transform .5s;
