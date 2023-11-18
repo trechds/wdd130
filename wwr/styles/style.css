@@ -1,7 +1,9 @@
     /* ************** HOME PAGE ************** */
 
     /* Import the Google Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Playpen+Sans&family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
     /* Define um limite máximo de largura para o conteúdo da página e centraliza-o na tela */
     #content {
@@ -53,7 +55,7 @@
     .logo:hover {
         opacity: .8;
         transform: scale(1.1);
-        transition: transform .5s;
+        transition: transform.5s;
     }
     
 
@@ -90,12 +92,6 @@
         padding: 35px;
     }
 
-    /* Estiliza o link "Home" com fundo preto e letra branca */
-    nav a [href="index.html"] {
-        background-color: #231F20;
-        border-radius: 3px;
-        color: white;
-    }
 
     /* Ao passar o mouse em cima do link, ele muda de cor */
     nav a:hover {
@@ -301,11 +297,11 @@
         text-decoration: underline;
     }
 
-    footer .social img {
+    footer .social-media img {
         padding-top: 15px;
     }
 
-    #social-media:hover, .whatsapp-icon:hover {
+    .social-media:hover, .whatsapp-icon:hover {
         opacity: .8;
         transform: scale(1.1);
         transition: transform .5s;
@@ -331,6 +327,22 @@
     #content-rivers {
         max-width: 1600px;
         margin: 0 auto;
+    }
+
+    #hero-msg-rivers {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top: 200px;
+        
+    }
+
+    #hero-msg-rivers h4 {
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    #hero-msg-rivers h1, #hero-msg-rivers h4, .msg .join {
+        text-align: center;
     }
 
     .center-container {
@@ -572,7 +584,7 @@
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        font: bold;
+        font: bold 16px 'Playpen Sans', 'Courgette', Arial;
     }
 
     .whatsapp-icon {
@@ -755,7 +767,6 @@ form {
     width: 90px;
     text-align: center;
     font-weight: bold;
-    text-shadow: black;
   }
   
   input,
@@ -880,7 +891,7 @@ form {
             font-size: 10px;
         }
 
-        #social-media {
+        .social-media {
             width: 30px;
             height: 30px;
             margin-bottom: 30px;
