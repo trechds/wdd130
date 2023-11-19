@@ -1,61 +1,498 @@
+/************* HOME PAGE *************/
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #FEFEFE;
-    color: #010101;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: white;
+    /*background: linear-gradient(to right, #4e1f4c, #1f1c50);*/
+    color: #010101;
 }
 
 header {
-    background-color: #132C48;
-    color: #FEFEFE;
-    padding: 10px 0;
+    background-color: #132c48;
+    padding: 30px;
+    border-radius: 50px;
+    margin: 20px 50px 0 50px;
+    
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 10em;
+    height: auto;
+    margin-top: -15px;
+    margin-bottom: -18px;
+    margin-left: 50px;
+    margin-right: -50px;
+}
+
+.nav-buttons button {
+    background-color: #629904;
+    color: #ffffff;
+    padding: 15px 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-buttons button a, .contact-button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contact-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-right: 50px;
+    margin-left: -50px;
+    font-size: 18px;
+}
+
+.main-content {
+    padding: 20px;
     text-align: center;
 }
 
-nav a {
-    color: #FEFEFE;
-    margin: 0 20px;
-    text-decoration: none;
+.company-logo {
+    width: 25em;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: -30px;
 }
 
-section {
-    padding: 50px;
+.separator-line {
+    border-top: 3px solid #11113a;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    text-align: left;
+}
+
+.grid-item img {
+    margin-left: 80px;
+    border: solid #28286a;
+    border-radius: 5px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.grid-item p, h2 {
+    margin-right: 80px;
+}
+
+.other-services {
+    margin-bottom: 80px;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.other-services img {
+    width: 18em;
+    height: auto;
+    margin-bottom: 20px;
+    border: solid #28286a;
+    border-radius: 5px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.other-services img:hover, .logo:hover {     
+    transform: scale(1.1);
+}
+
+.other-services h2,
+.other-services p {
+    text-align: center;
+}
+
+.other-services p {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.why-titles {
+    margin: 0;
+}
+
+h1 {
+    color: #28286a;
+}
+
+.second-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     text-align: center;
 }
 
 footer {
-    background-color: #2F3D52;
-    color: #FEFEFE;
-    padding: 10px 0;
+    background-color: #132c48;
+    padding: 20px 0;
+    color: #ffffff;
+}
+
+#footer-content {
+    display: grid;
+    grid-template-columns: 10fr 1fr; 
+    align-items: center;
+    justify-content: space-between;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
-.btn-whatsapp {
-    background-color: #629904;
-    color: #FEFEFE;
-    padding: 10px 20px;
+.footer-texts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 2; 
+}
+
+.footer-texts p {
+    margin-right: 20px;
+    margin: 0;
+}
+
+.footer-texts a, .footer-liks a {
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 5px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#site-plan, #contactus-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#site-plan {
+    margin-right: auto; 
+}
+
+#copyright {
+    margin: 0; 
+}
+
+#contactus-link {
+    margin-left: auto; 
+}
+
+#social, .footer-liks {
+    display: flex;
+    gap: 10px; 
+    align-items: center;
+    justify-content: right;
+    margin-right: 60px;
+    margin-left: -100px;
+}
+
+#social a, .footer-liks a {
+    display: inline-block; 
+}
+
+#social img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 50px; 
+    right: 10px;
+  }
+  
+  .whatsapp-icon img {
+    width: 45px; 
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+.social-media:hover, .whatsapp-icon:hover {
+    opacity: .8;
+    transform: scale(1.1);
+    transition: transform.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/************* ELETRICITY PAGE *************/
+
+#grid-content-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.categories-section h2 {
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-bottom: -40px;
+}
+
+.category-box {
+    text-align: center;
+}
+
+.category-box img {
+    width: 400px;
+    height: auto;
+}
+
+.place-description {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+}
+
+.place-title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 23px;
+}
+
+#content-2 {
+    text-align: center;
+}
+
+.kind-of-service-box {
+    margin-bottom: 20px;
+}
+
+.service-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.service-button {
+    background-color: #28286a;
+    color: #ffffff;
+    padding: 15px 30px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.service-info-box {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+/************* SOLAR PAGE *************/
+
+#solar-main {
+    text-align: center;
+    margin: 20px;
+}
+
+.solar-header {
+    text-align: left;
+    margin-left: 50px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #28286a;
+    margin-bottom: -30px;
+}
+
+.separator-line-vertical {
+    border-left: 3px solid #11113a;
+    height: 300px;
+    margin: 20px;
+}
+
+.solar-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    gap: 20px;
+    text-align: left;
     margin-top: 20px;
-    display: inline-block;
 }
 
-/* Estilos de responsividade */
-@media (max-width: 768px) {
-    header nav {
-        flex-direction: column;
-    }
-
-    header nav a {
-        margin: 10px 0;
-    }
-
-    section {
-        padding: 30px;
-    }
+.solar-info {
+    margin-right: 5px;
+    width: 600px;
+    height: auto;
 }
+
+.solar-info h2 {
+    color: #28286a;
+    margin-left: 50px;
+}
+
+.solar-image-1 {
+    width: 230px;
+    height: auto;
+    border: solid #28286a;
+    border-radius: 5px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.solar-image-2 {
+    width: auto;
+    height: 230px;
+    border: solid #28286a;
+    border-radius: 5px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+#img-solar-inverter {
+    width: 200px;
+    height: auto;
+}
+
+#img-solar-panel {
+    width: auto;
+    height: 500px;
+}
+
+.solar-image:hover {
+    transform: scale(1.1);
+}
+
+.solar-title {
+    margin-top: 10px;
+    color: #28286a;
+    text-align: center;
+}
+
+.solar-separator {
+    border-top: 3px solid #11113a;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.solar-panel-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+}
+
+.solar-panel-info {
+    margin-right: 20px;
+}
+
+.solar-panel-title {
+    color: #28286a;
+}
+
+.solar-panel-button {
+    background-color: #28286a;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.solar-panel-description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #28286a;
+}
+
+.solar-form-section {
+    margin-bottom: 50px;
+}
+
+.solar-form-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28286a;
+}
+
+.solar-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+}
+
+.solar-form-label {
+    margin-bottom: 5px;
+    color: #28286a;
+}
+
+.solar-form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.solar-form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.solar-form-submit {
+    background-color: #28286a;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.solar-form-submit:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+/************* CONTACT US PAGE *************/
