@@ -16,8 +16,7 @@ header {
     background-color: #132c48;
     padding: 30px;
     border-radius: 50px;
-    margin: 20px 50px 0 50px;
-    
+    margin: 20px 50px 0 50px;  
 }
 
 .navigation-bar {
@@ -47,14 +46,6 @@ header {
     font-size: 16px;
 }
 
-.nav-link {
-    text-decoration: none;
-    color: #ffffff;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-size: 16px;
-}
-
 .nav-link:hover {
     color: white;
     background-color: #6f7364;
@@ -80,11 +71,10 @@ header {
     font-size: 18px;
 }
 
-.contact-link:hover, #contactus-link:hover, #site-plan:hover {
-    color: #629904;
-}
-
-.read-more:hover {
+.contact-link:hover,
+.read-more:hover,
+#contactus-link:hover, 
+#site-plan:hover {
     color: #629904;
 }
 
