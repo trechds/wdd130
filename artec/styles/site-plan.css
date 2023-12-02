@@ -1,7 +1,7 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Serif&family=Playpen+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Merienda&family=Noto+Serif&family=Playpen+Sans&family=Roboto&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -47,6 +47,12 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
+}
+h1 {
+  font-family: 'Merienda', 'Roboto', Arial;
+}
+h2, h3 {
+  font-family: 'Courgette', 'Roboto', Arial;
 }
 h2 {
   text-align: center;

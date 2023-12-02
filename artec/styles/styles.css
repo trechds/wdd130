@@ -1,6 +1,6 @@
 /************* HOME PAGE *************/
 
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Merienda&family=Noto+Serif&family=Playpen+Sans&family=Roboto&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif, Arial;
@@ -35,7 +35,7 @@ header {
     margin-right: -50px;
 }
 
-.nav-buttons button {
+.nav-buttons a {
     background-color: #629904;
     color: #ffffff;
     padding: 15px 30px;
@@ -47,27 +47,40 @@ header {
     font-size: 16px;
 }
 
-.nav-buttons button a, .contact-button a {
+.nav-link {
     text-decoration: none;
     color: #ffffff;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 16px;
 }
 
-.nav-buttons button:hover {
-    background-color: #6f7364;
+.nav-link:hover {
     color: white;
+    background-color: #6f7364;
 }
 
-.contact-button {
-    background-color: transparent;
+.nav-link {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: none;
     color: #ffffff;
+    font-size: 16px;
     border: none;
+    border-radius: 12px;
     cursor: pointer;
+}
+
+.contact-link {
+    color: #ffffff;
     margin-right: 50px;
     margin-left: -50px;
     font-size: 18px;
 }
 
-.contact-button:hover, #contactus-link:hover, #site-plan:hover {
+.contact-link:hover, #contactus-link:hover, #site-plan:hover {
     color: #629904;
 }
 
@@ -151,7 +164,12 @@ header {
     margin: 0;
 }
 
-h1, h2, h3 {
+h1 {
+    color: #28286a;
+    font-family: 'Merienda', 'Roboto', Arial;
+}
+
+h2, h3 {
     color: #28286a;
     font-family: 'Courgette', 'Roboto', Arial;
 }
@@ -202,7 +220,7 @@ footer {
     text-align: center;
 }
 
-#site-plan, #contactus-link {
+#site-plan, #contactus-link, .contact-link {
     color: #ffffff;
     text-decoration: none;
 }
