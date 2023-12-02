@@ -156,6 +156,11 @@ h1, h2, h3 {
     font-family: 'Courgette', 'Roboto', Arial;
 }
 
+p {
+    font-family: 'Roboto', sans-serif, Arial;
+    color: #11113a;
+}
+
 .second-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
