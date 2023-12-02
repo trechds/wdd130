@@ -50,6 +50,11 @@ header {
     color: #ffffff;
 }
 
+.nav-buttons button:hover {
+    background-color: #6f7364;
+    color: white;
+}
+
 .contact-button {
     background-color: transparent;
     color: #ffffff;
@@ -58,6 +63,14 @@ header {
     margin-right: 50px;
     margin-left: -50px;
     font-size: 18px;
+}
+
+.contact-button:hover, #contactus-link:hover, #site-plan:hover {
+    color: #629904;
+}
+
+.read-more:hover {
+    color: #629904;
 }
 
 .main-content {
@@ -136,7 +149,7 @@ header {
     margin: 0;
 }
 
-h1 {
+h1, h2, h3 {
     color: #28286a;
 }
 
