@@ -1,7 +1,9 @@
 /************* HOME PAGE *************/
 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto&display=swap');
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif, Arial;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -151,6 +153,7 @@ header {
 
 h1, h2, h3 {
     color: #28286a;
+    font-family: 'Courgette', 'Roboto', Arial;
 }
 
 .second-grid {
