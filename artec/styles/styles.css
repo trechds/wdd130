@@ -92,9 +92,10 @@ header {
 
 .separator-line {
     border-top: 3px solid #11113a;
-    width: 100%;
+    width: 95%;
     margin-top: 50px;
     margin-bottom: 50px;
+    margin: 20px auto;
 }
 
 .content-grid {
@@ -285,10 +286,8 @@ footer {
     grid-gap: 20px;
 }
 
-.categories-section h2 {
+#categories {
     margin-left: 80px;
-    margin-top: 30px;
-    margin-bottom: -40px;
 }
 
 .category-box {
@@ -298,6 +297,15 @@ footer {
 .category-box img {
     width: 400px;
     height: auto;
+    border: solid #28286a;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.category-box img:hover {
+    opacity: .8;
+    transform: scale(1.1);
+    transition: transform.5s;
 }
 
 .place-description {
@@ -338,12 +346,47 @@ footer {
     font-size: 16px;
 }
 
+.service-button:hover {
+    opacity: .8;
+}
+
+.service-button.selected {
+    background-color: #629904;
+    color: #ffffff;
+}
+
+.slideshow {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.slide-image {
+    width: 100%;
+    display: none;
+    border: solid #28286a;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.slide-image:hover {
+    opacity: .8;
+    transition: transform.5s;
+}
+
 .service-info-box {
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 60px;
-    padding-left: 300px;
-    padding-right: 300px;
+    margin-bottom: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: #132c48;
+    border: solid #629904;
+    border-radius: 8px;
+    margin: 30px 100px 60px 100px;
+}
+
+.service-info-box p {
+    color: white;
 }
 
 
