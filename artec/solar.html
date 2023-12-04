@@ -22,9 +22,9 @@
     </header>
     <main>
         <div id="solar-main">
-            <p class="solar-header">Solar Energy - The Energy of the Future</p>
-            <div class="separator-line"></div>
+            <h1 class="solar-header">Solar Energy - The Energy of the Future</h2>
         </div>
+        <div class="separator-line"></div>
         <!-- First Section -->
         <div class="solar-section">
             <div class="solar-info">
@@ -37,13 +37,16 @@
                     With our state-of-the-art solutions, you can trust in reliable energy production and a greener future for generations to come.
                 </p>
             </div>
-            <img class="solar-image-1" src="images/montador.png" alt="Montador">
+            <div class="montator">
+                <img class="solar-image-1" src="images/montador.png" alt="Montador">
+                <h3 class="solar-title">Qualified Professionals</h3>
+            </div>
             <div class="solar-info">
                 <img class="solar-image-2" src="images/casa_com_placa.png" alt="Residential Solar Panel">
-                <h3 class="solar-title">Designs 3d for Projects</h3>
+                <h3 class="solar-title">3d Designs for Projects</h3>
             </div>
         </div>
-        <div class="solar-separator"></div>
+        <div class="separator-line"></div>
         <!-- Second Section -->
         <div class="solar-panel-section">
             <div class="technology">
@@ -56,43 +59,49 @@
                 <p>By choosing our solar energy services, you make an environmentally conscious choice. Solar energy not only reduces your carbon footprint but also offers long-term savings. We guide you through the process, from system design to installation, ensuring you benefit from clean energy for years to come.</p>
             </div>
             <div class="solar-panel-info">
+                <h1>Explore the Brands we work with</h1>
                 <h2 class="solar-panel-title">Solar Inverter Options</h2>
-                <p class="solar-panel-description">
+                <p class="solar-panel-description1">
                     Choose from a variety of solar inverters to maximize the efficiency of your solar energy system.
                 </p>
+                <button class="solar-panel-button">SELECT PANEL</button>
+                <img id="img-solar-inverter" src="images/deye_75kw.png" alt="Solar Inverter">
             </div>
-            <button class="solar-panel-button">SELECT INVERTER</button>
-            <div class="solar-panel-info">
-                <h2 class="solar-panel-title">Solar Panel Options</h2>
-                <p class="solar-panel-description">
-                    Explore different solar panel brands to find the perfect fit for your energy needs.
-                </p>
+            <div id="solar-inverter-info">
+                <div class="solar-panel-info">
+                    <h2 class="solar-panel-title">Solar Panel Options</h2>
+                    <p class="solar-panel-description2">
+                        Explore different solar panel brands to find the perfect fit for your energy needs.
+                    </p>
+                </div>  
+                <button class="solar-inverter-button">SELECT INVERTER</button>
+                <img id="img-solar-panel" src="images/canadian-550w.png" alt="Solar Panel Brands">
             </div>
-            <button class="solar-panel-button">SELECT PANEL</button>
-            <img id="img-solar-inverter" src="images/deye_75kw.png" alt="Solar Inverter">
-            <img id="img-solar-panel" src="images/canadian-550w.png" alt="Solar Panel Brands">
         </div>
-        <div class="solar-separator"></div>
+        <div class="separator-line"></div>
         <!-- Third Section -->
         <div class="solar-form-section">
             <h2 class="solar-form-title">Order your Budget for Free</h2>
-            <form class="solar-form">
+            <form id="solar-form" class="solar-form">
                 <div>
                     <label for="first-name" class="solar-form-label">First Name*</label>
                     <input type="text" id="first-name" class="solar-form-input" placeholder="Type your first name here" required>
-                    <label for="last-name" class="solar-form-label">Last Name*</label>
-                    <input type="text" id="last-name" class="solar-form-input" placeholder="Type your last name here" required>
-                </div>
-                <div>
                     <label for="email" class="solar-form-label">Email*</label>
                     <input type="email" id="email" class="solar-form-input" placeholder="Enter your email here" required>
+                </div>
+                <div>
+                    <label for="last-name" class="solar-form-label">Last Name*</label>
+                    <input type="text" id="last-name" class="solar-form-input" placeholder="Type your last name here" required>
                     <label for="phone" class="solar-form-label">Phone Number*</label>
                     <input type="tel" id="phone" class="solar-form-input" placeholder="Enter your phone number" required>
+                </div>                
+                <div class="budget-message">
+                    <label for="message" class="solar-form-label">Message*</label>
+                    <textarea id="message" class="solar-form-textarea" placeholder="Write your message here" required></textarea>
                 </div>
-                <label for="message" class="solar-form-label">Message*</label>
-                <textarea id="message" class="solar-form-textarea" placeholder="Write your message here" required></textarea>
                 <button type="submit" class="solar-form-submit">Submit</button>
             </form>
+            
         </div>
     </main>
     <footer>
@@ -119,6 +128,9 @@
         <a href="https://api.whatsapp.com/send?phone=5554991424628" target="_blank">
         <img src="images/icon_whatsapp.png" alt="WhatsApp">
         </a>
+    </div>
+    <div id="thank-you-message" class="hidden">
+        Thank you for contacting us! We will contact you via WhatsApp to provide your quote.
     </div>
 </body>
 </html>

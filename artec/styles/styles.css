@@ -137,7 +137,8 @@ header {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
-.other-services img:hover, .logo:hover {     
+.other-services img:hover,
+.logo:hover {     
     transform: scale(1.1);
 }
 
@@ -368,7 +369,10 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.slide-image:hover {
+.slide-image:hover,
+.solar-image-1:hover,
+.solar-image-2:hover,
+.technology img:hover  {
     opacity: .8;
     transition: transform.5s;
 }
@@ -411,13 +415,6 @@ footer {
     font-size: 28px;
     font-weight: bold;
     color: #28286a;
-    margin-bottom: -30px;
-}
-
-.separator-line-vertical {
-    border-left: 3px solid #11113a;
-    height: 300px;
-    margin: 20px;
 }
 
 .solar-section {
@@ -457,6 +454,25 @@ footer {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+.technology {
+    margin-left: 40px;
+    padding-right: 50px;
+    border-right: solid 3px #11113a;
+}
+
+.technology h3, p {
+    padding-left: 30px;
+}
+
+.technology img {
+    border: solid #28286a;
+    border-radius: 5px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    width: 650px;
+    height: auto;
+}
+
 #img-solar-inverter {
     width: 200px;
     height: auto;
@@ -477,65 +493,108 @@ footer {
     text-align: center;
 }
 
-.solar-separator {
-    border-top: 3px solid #11113a;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
 .solar-panel-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     text-align: left;
+    align-items: flex-end;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.solar-panel-info {
-    margin-right: 20px;
-}
 
 .solar-panel-title {
     color: #28286a;
+    margin-right: 0;
+    text-align: center;
 }
 
-.solar-panel-button {
+.solar-panel-button:hover,
+.solar-inverter-button:hover {
+    background-color: #629904;
+}
+
+.solar-panel-button, .solar-inverter-button {
     background-color: #28286a;
     color: #ffffff;
     padding: 10px 20px;
-    margin: 10px 0;
+    margin: 10px;
     border: none;
     border-radius: 12px;
     cursor: pointer;
     font-size: 16px;
+    height: 50px;
+    width: 200px;
 }
 
-.solar-panel-description {
+.solar-inverter-button {
+    justify-content: center;
+    margin-left: 110px;
+}
+
+.solar-panel-info, .solar-inverter-info {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.solar-panel-info h1 {
+    padding-bottom: 180px;
+}
+
+.solar-panel-description1 {
     margin-top: 10px;
     margin-bottom: 20px;
+
     color: #28286a;
+    text-align: center;
+}
+
+.solar-panel-description2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-right: 40px;
+    color: #28286a;
+    text-align: center;
 }
 
 .solar-form-section {
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .solar-form-title {
     font-size: 24px;
     font-weight: bold;
     color: #28286a;
+    text-align: center;
+    padding-right: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
 }
 
 .solar-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    text-align: left;
+    text-align: center;
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+
+.solar-form-submit {
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .solar-form-label {
     margin-bottom: 5px;
     color: #28286a;
+    text-align: center;
 }
 
 .solar-form-input {
@@ -558,14 +617,17 @@ footer {
     border-radius: 12px;
     cursor: pointer;
     font-size: 16px;
+    grid-column: span 2;
 }
 
 .solar-form-submit:hover {
-    opacity: 0.8;
+    background-color: #629904;
 }
 
+.budget-message {
+    grid-column: span 2;
+}
 
-
-
-
-/************* CONTACT US PAGE *************/
+.hidden {
+    display: none;
+}
