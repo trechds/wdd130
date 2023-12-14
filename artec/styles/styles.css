@@ -641,6 +641,16 @@ footer {
     padding-left: 0;
 }
 
+.card p a {
+    padding-left: 110px;
+    padding-right: 110px;
+    background-color: #132c48;
+    color: #ffffff; 
+    border: solid #28286a;
+    border-radius: 3px;
+}
+
+
 
 
 
